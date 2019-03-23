@@ -1,0 +1,12 @@
+server:
+  port: 8765
+
+spring:
+  profiles:
+    active:
+    - prod
+  application:
+    name: zuul
+  cloud:
+    config:
+      uri: https://www.gundmann.dk/config
