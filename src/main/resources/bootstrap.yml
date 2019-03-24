@@ -9,7 +9,7 @@ spring:
     name: zuul
   cloud:
     config:
-      uri: https://www.gundmann.dk/config
+      uri: http://192.168.1.100:5678
 
 management:
     endpoints:
