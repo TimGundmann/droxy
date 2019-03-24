@@ -10,3 +10,11 @@ spring:
   cloud:
     config:
       uri: https://www.gundmann.dk/config
+
+management:
+    endpoints:
+     web:
+        exposure:
+            include: '*'
+    server:
+        port: 8764
