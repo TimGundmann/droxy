@@ -18,3 +18,5 @@ management:
             include: '*'
     server:
         port: 8764
+        ssl:
+          enabled: false
