@@ -17,7 +17,7 @@ spring:
     admin:
       client:
         instance:
-          management-base-url: http://192.168.1.100:8765
+          management-base-url: http://192.168.1.100:8764
           service-url: http://192.168.1.100:8765
 
 management:
