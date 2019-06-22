@@ -7,3 +7,5 @@ services:
     image: droxy
     volumes:
       - /security:/security
+    environment:
+      TZ: "Europe/Amsterdam"
