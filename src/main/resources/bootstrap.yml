@@ -7,9 +7,10 @@ spring:
     - prod
   application:
     name: zuul
-  cloud:
-    config:
-      uri: http://192.168.1.100:5678
+  config:
+    import: optional:classpath:/
+      #    config:
+      #      uri: http://192.168.1.100:5678
   mvc:
     favicon:
       enabled: false
