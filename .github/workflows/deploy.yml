@@ -19,11 +19,6 @@ jobs:
           distribution: 'temurin'
           java-version: 23
 
-#      - name: Set up Maven
-#        uses: s4u/setup-maven-action@v1.11.0
-#        with:
-#          maven-version: 3.9.9
-
       - name: Build Spring Boot App
         run: mvn clean package -DskipTests
 
@@ -52,4 +47,4 @@ jobs:
             docker load < /tmp/droxy.tar.gz
             docker stop droxy || true
             docker rm droxy || true
-            docker run -d --name droxy -p 8080:8080 -v $HOME/droxy/h2:/data/h2 droxy:latest
+            docker run -d --name droxy -p 8765:8765 -v $HOME/droxy/h2:/data/h2 droxy:latest
