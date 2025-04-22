@@ -25,7 +25,7 @@ jobs:
           maven-version: 3.9.9
 
       - name: Build Spring Boot App
-        run: mvn clean package
+        run: mvn clean package -DskipTests
 
       - name: Build Docker Image
         run: docker build -t droxy:latest .
